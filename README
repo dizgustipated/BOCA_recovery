@@ -35,18 +35,18 @@ Many thanks to teknomancer, for giving permission to build my kernel this way!
    ./kernel.sh defconfig
    ./kernel.sh modules
    cd ~/android/system/ 
-   ./build/envsetup.sh
+   . build/envsetup.sh
    lunch cyanogen_galaxytab-eng
    make -j8
    cd device/samsung/galaxytab
    ./kernel.sh kernel
    cd ~/android/system/ 
-   ./build/envsetup.sh
+   . build/envsetup.sh
    lunch cyanogen_galaxytab-eng
    make -j8 bacon
    cd ~/android/system/ 
    repo sync -j64
-   ./build/envsetup.sh && brunch cyanogen_galaxytab-eng 
+   . build/envsetup.sh && brunch cyanogen_galaxytab-eng 
 
 6) Congratulations! You have just built cm7 for the SGT7 (gsm) along with my kerne(boot.img)
 
