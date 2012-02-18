@@ -28,7 +28,7 @@ Many thanks to teknomancer, for giving permission to build my kernel this way!
 4) Open android/system/bootable/, delete recovery folder, and place new recovery folder in.
 
 5) Go back to your terminal window:
-   ./build/envsetup.sh
+   . build/envsetup.sh
    lunch cyanogen_galaxytab-eng
    make -j8
    cd device/samsung/galaxytab
